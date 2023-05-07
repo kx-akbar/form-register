@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 Form-1</title>
+    <style>
+        input{
+            padding: 5px 7px;
+            border-radius: 6px;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        input::placeholder{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            margin-top: 40px;
+            width: 100%;
+            height: 70px;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding: 5px 0 5px 0;
+            background-color: blue;
+        }
+        .nav{
+            font-size: 30px;
+            color: white;
+            margin-top: 5px;
+            height: 50px;
+            text-align: center;
+            background-color: blue;
+        }
+        .main{
+            width: 69%;
+            font-size: 30px;
+            color: white;
+            margin-top: 5px;
+            height: 360px;
+            text-align: center;
+            background-color: blue;
+            float: left;
+        }
+        .aside{
+            width: 30%;
+            font-size: 30px;
+            color: white;
+            margin-top: 5px;
+            height: 360px;
+            margin-left: 12px;
+            text-align: center;
+            background-color: blue;
+            float: left;
+        }
+        .footer{
+            width: 100%;
+            font-size: 30px;
+            color: white;
+            margin-top: 5px;
+            height: 70px;
+            float: left;
+            text-align: center;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="GET">
+        <label for="#">Username</label>
+        <input type="text" placeholder="username"><br><br>
+        <label for="#">First name</label>
+        <input type="text" placeholder="first name"><br><br>
+        <label for="#">Email</label>
+        <input type="email" placeholder="email"><br><br>
+        <label for="#">Password</label>
+        <input type="password" placeholder="password"><br><br>
+        <label for="#">Yosh</label>
+        <input type="number" placeholder="age"><br><br>
+        <label for="#">Tajribangiz</label>
+        <select>
+            <option value="0">1 yil</option>
+            <option value="1">2 yil</option>
+            <option value="2">3 yil</option>
+        </select>
+        <br><br>
+        <label for="#">Passport</label>
+        <input type="file"><br><br>
+        <label for="#">Erkak</label>
+        <input type="radio" name="gender" value="male">
+        <label for="#">Ayol</label>
+        <input type="radio" name="gender" value="famale">
+        <br><br>
+        <label for="#">Diplom</label>
+        <input type="checkbox" name="check">
+        <br><br>
+        <label for="#">Tugilgan sana</label>
+        <input type="date">
+        <br><br>
+        <label for="#">Tavsif</label><br>
+        <textarea name="comment" id="" cols="22" rows="5"></textarea>
+        <br><br>
+        <input type="submit" name="submit">
+    </form>
+
+    <header class="header">Header</header>
+    <nav class="nav">Nav</nav>
+    <main class="main">Main section</main>
+    <aside class="aside">Aside section</aside>
+    <footer class="footer">Footer</footer>
+</body>
+</html>
